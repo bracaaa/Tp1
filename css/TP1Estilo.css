@@ -1,0 +1,177 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+}
+
+header {
+    background-color: #111;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 40px;
+    color: white;
+}
+
+header p {
+    color: #aaa;
+    font-size: 16px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 12px;
+}
+
+nav ul li a {
+    color: #717171;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.proyectos-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.proyecto {
+    width: 250px;
+    text-align: center;
+}
+
+.proyecto img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.proyecto p {
+    margin-top: 8px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+section h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #111;
+}
+
+section p {
+    line-height: 1.5;
+    color: #555;
+}
+
+.sobre-mi-contenido {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+img {
+    display: block;
+    border-radius: 10px;
+    width: 300px;
+}
+
+#redes a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#redes img {
+    width: 20px;
+    height: 20px;
+}
+
+.lista-flex {
+    display: flex; /*activación del Flexbox*/
+    gap: 15px; /*espacio entre los elementos*/
+    flex-wrap: wrap; /*permite que baje de linea, si no hay espacio, baja*/
+    padding-left: 0; /*saca la sangria*/
+    list-style: none; /*saca los puntos de la lista*/
+    justify-content: center;
+}
+
+.lista-flex li {
+    background: #ddd;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+a {
+    color: #111;
+}
+
+#contacto form {
+    max-width: 500px;
+}
+
+#contacto label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#contacto input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contacto button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #111;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+
+    .sobre-mi-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .lista-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proyectos-container {
+    flex-direction: column;
+    align-items: center;
+    }
+}
